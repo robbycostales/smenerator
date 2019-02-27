@@ -21,16 +21,68 @@
 
     <table>
       <tr>
-        <th>S</th>
-        <th>M</th>
-        <th>E</th>
-        <th>N</th>
+        <th colspan="4">Parts of speech</th>
       </tr>
       <tr>
-        <th id='s'></th>
-        <th id='m'></th>
-        <th id='e'></th>
-        <th id='n'></th>
+        <td>
+          <select id='s-pos'>
+            <option value="NA">N/A</option>
+            <option value="n">Noun</option>
+            <option value="v">Verb</option>
+            <option value="adj">Adjective</option>
+            <option value="adv">Adverb</option>
+            <option value="u">Unknown</option>
+          </select>
+        </td>
+        <td>
+          <select id='m-pos'>
+            <option value="NA">N/A</option>
+            <option value="n">Noun</option>
+            <option value="v">Verb</option>
+            <option value="adj">Adjective</option>
+            <option value="adv">Adverb</option>
+            <option value="u">Unknown</option>
+          </select>
+        </td>
+        <td>
+          <select id='e-pos'>
+            <option value="NA">N/A</option>
+            <option value="n">Noun</option>
+            <option value="v">Verb</option>
+            <option value="adj">Adjective</option>
+            <option value="adv">Adverb</option>
+            <option value="u">Unknown</option>
+          </select>
+        </td>
+        <td>
+          <select id='n-pos'>
+            <option value="NA">N/A</option>
+            <option value="n">Noun</option>
+            <option value="v">Verb</option>
+            <option value="adj">Adjective</option>
+            <option value="adv">Adverb</option>
+            <option value="u">Unknown</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th colspan="4">Ends in ___</th>
+      </tr>
+      <tr>
+        <td><input id='s-end'></input></td>
+        <td><input id='m-end'></input></td>
+        <td><input id='e-end'></input></td>
+        <td><input id='n-end'></input></td>
+      </tr>
+      <tr>
+        <th colspan="4">Output:</th>
+      </tr>
+      <tr>
+        <!-- OUTPUT VALUES -->
+        <td id='s'></td>
+        <td id='m'></td>
+        <td id='e'></td>
+        <td id='n'></td>
       </tr>
     </table>
 

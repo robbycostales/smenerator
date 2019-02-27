@@ -1,0 +1,22 @@
+body {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+table {
+  margin: 10px auto;
+}
+
+td {
+  min-width: 100px;
+  text-align: center;
+}
+
+tr {
+  height: 20px;
+}
+
+.first-letter {
+  font-weight: bold;
+}
