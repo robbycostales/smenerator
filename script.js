@@ -36,9 +36,10 @@ function handleRequests(e){
           var response = JSON.parse(cur.responseText);
           // gather random word object
           var randObj = response[Math.floor(Math.random() * response.length)]
+          console.log(randObj)
           // skip while loop if NA, keep going if tag does not include desired part of speech. stop if too many tries
           var tries = 1;
-          while (tries < 1000 && pos != 'NA' && !randObj.tags.includes(pos)){
+          while (tries < 1000 && pos != 'NA' && randObj.tags && !randObj.tags.includes(pos)){
             randObj = response[Math.floor(Math.random() * response.length)]
             tries++;
           }

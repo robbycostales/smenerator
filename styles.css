@@ -14,9 +14,22 @@ td {
 }
 
 tr {
-  height: 20px;
+  height: 40px;
 }
 
 .first-letter {
   font-weight: bold;
+}
+
+.centered-top {
+  margin: auto;
+  text-align: center;
+}
+
+input {
+  max-width: 50px;
+}
+
+footer {
+  margin: 80px auto;
 }
