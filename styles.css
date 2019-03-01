@@ -1,3 +1,17 @@
+html {
+  font-family: 'Maven Pro', sans-serif;
+}
+
+#greyed {
+  border-radius: 40px;
+  background-color: #e8e8e8;
+}
+
+button{
+  margin: 20px auto
+}
+
+
 body {
   max-width: 600px;
   margin: 50px auto;
@@ -26,10 +40,17 @@ tr {
   text-align: center;
 }
 
+#logo {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  text-align: center;
+}
+
 input {
   max-width: 50px;
 }
 
 footer {
-  margin: 80px auto;
+  margin: 10px auto ;
 }

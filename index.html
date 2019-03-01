@@ -11,91 +11,122 @@
   <meta name="description" content="SMEN generator">
   <meta name="keywords" content="SMEN, generator, SMENerator, SMEN-erator, Columbia, Kingsmen">
 
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
   <!-- favicon -->
   <link href="../favicon.ico" type="image/x-icon" rel="icon" />
   <link rel="stylesheet" href="styles.css" type="text/css">
   </head>
   <body>
 
+    <div id='logo-div'>
+      <img id='logo' src='./logo.png' alt='Avatar'>
+    </div>
+
     <div class='centered-top'>
     <h1> SMEN-erator </h1>
     <p> Please use with caution. </p>
     </div>
 
-    <table>
-      <tr>
-        <th colspan="4">Parts of speech</th>
-      </tr>
-      <tr>
-        <td>
-          <select id='s-pos'>
-            <option value="NA">N/A</option>
-            <option value="n">Noun</option>
-            <option value="v">Verb</option>
-            <option value="adj">Adjective</option>
-            <option value="adv">Adverb</option>
-            <option value="prop">Prop</option>
-            <!-- <option value="u">Unknown</option> -->
-          </select>
-        </td>
-        <td>
-          <select id='m-pos'>
-            <option value="NA">N/A</option>
-            <option value="n">Noun</option>
-            <option value="v">Verb</option>
-            <option value="adj">Adjective</option>
-            <option value="adv">Adverb</option>
-            <option value="prop">Prop</option>
-            <!-- <option value="u">Unknown</option> -->
-          </select>
-        </td>
-        <td>
-          <select id='e-pos'>
-            <option value="NA">N/A</option>
-            <option value="n">Noun</option>
-            <option value="v">Verb</option>
-            <option value="adj">Adjective</option>
-            <option value="adv">Adverb</option>
-            <option value="prop">Prop</option>
-            <!-- <option value="u">Unknown</option> -->
-          </select>
-        </td>
-        <td>
-          <select id='n-pos'>
-            <option value="NA">N/A</option>
-            <option value="n">Noun</option>
-            <option value="v">Verb</option>
-            <option value="adj">Adjective</option>
-            <option value="adv">Adverb</option>
-            <option value="prop">Prop</option>
-            <!-- <option value="u">Unknown</option> -->
-          </select>
-        </td>
-      </tr>
-      <tr>
-        <th colspan="4">Ends in ___</th>
-      </tr>
-      <tr>
-        <td><input id='s-end'></input></td>
-        <td><input id='m-end'></input></td>
-        <td><input id='e-end'></input></td>
-        <td><input id='n-end'></input></td>
-      </tr>
-      <tr>
-        <th colspan="4">Output:</th>
-      </tr>
-      <tr>
-        <!-- OUTPUT VALUES -->
-        <td id='s'></td>
-        <td id='m'></td>
-        <td id='e'></td>
-        <td id='n'></td>
-      </tr>
-    </table>
+    <div id='greyed'>
+      <table>
+        <tr>
+          <th colspan="4">Parts of speech</th>
+        </tr>
+        <tr>
+          <td>
+            <select id='s-pos'>
+              <option value="NA">N/A</option>
+              <option value="n">Noun</option>
+              <option value="v">Verb</option>
+              <option value="adj">Adjective</option>
+              <option value="adv">Adverb</option>
+              <option value="prop">Prop</option>
+              <!-- <option value="u">Unknown</option> -->
+            </select>
+          </td>
+          <td>
+            <select id='m-pos'>
+              <option value="NA">N/A</option>
+              <option value="n">Noun</option>
+              <option value="v">Verb</option>
+              <option value="adj">Adjective</option>
+              <option value="adv">Adverb</option>
+              <option value="prop">Prop</option>
+              <!-- <option value="u">Unknown</option> -->
+            </select>
+          </td>
+          <td>
+            <select id='e-pos'>
+              <option value="NA">N/A</option>
+              <option value="n">Noun</option>
+              <option value="v">Verb</option>
+              <option value="adj">Adjective</option>
+              <option value="adv">Adverb</option>
+              <option value="prop">Prop</option>
+              <!-- <option value="u">Unknown</option> -->
+            </select>
+          </td>
+          <td>
+            <select id='n-pos'>
+              <option value="NA">N/A</option>
+              <option value="n">Noun</option>
+              <option value="v">Verb</option>
+              <option value="adj">Adjective</option>
+              <option value="adv">Adverb</option>
+              <option value="prop">Prop</option>
+              <!-- <option value="u">Unknown</option> -->
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th colspan="4">Ends in ___</th>
+        </tr>
+        <tr>
+          <td><input id='s-end'></input></td>
+          <td><input id='m-end'></input></td>
+          <td><input id='e-end'></input></td>
+          <td><input id='n-end'></input></td>
+        </tr>
+        <tr>
+          <th colspan="4">Keep result</th>
+        </tr>
+        <tr>
+          <td><input type='checkbox' id='s-keep'></td>
+          <td><input type='checkbox' id='m-keep'></td>
+          <td><input type='checkbox' id='e-keep'></td>
+          <td><input type='checkbox' id='n-keep'></td>
+        </tr>
+        <tr>
+          <th colspan="4">Output:</th>
+        </tr>
+        <tr>
+          <!-- OUTPUT VALUES -->
+          <td id='s'></td>
+          <td id='m'></td>
+          <td id='e'></td>
+          <td id='n'></td>
+        </tr>
+      </table>
 
-    <button id='enter'>
-      SMEN-erate
-    </button>
+      <div id='enter-div'>
+        <button id='enter'>
+          SMEN-erate
+        </button>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <h3> Notes </h3>
+    <p> Does not make any gaurentees about part of speech but makes best attempt (poor API design / laziness on my part) </p>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
 
     <footer>
       Made by Robby with a 'Y'
